@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nanashima21.github.io/static/css/main.f314b8a6.css",
+    "main.js": "/Nanashima21.github.io/static/js/main.8642638f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Nanashima21.github.io/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/Nanashima21.github.io/index.html",
+    "main.f314b8a6.css.map": "/Nanashima21.github.io/static/css/main.f314b8a6.css.map",
+    "main.8642638f.js.map": "/Nanashima21.github.io/static/js/main.8642638f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Nanashima21.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f314b8a6.css",
+    "static/js/main.8642638f.js"
+  ]
+}
