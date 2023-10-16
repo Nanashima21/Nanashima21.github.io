@@ -1,0 +1,9 @@
+.box {
+    font-weight: bold;
+    padding-left: 50px;
+    display: flex;
+}
+
+.box div{
+    width:40%;
+}
