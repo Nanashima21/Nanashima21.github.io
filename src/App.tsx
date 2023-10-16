@@ -15,7 +15,7 @@ const App = () => {
         <h1>Portfolio</h1>
         <div className='contents'>
           <div className='parent'>
-            <img src='/cat.png' className='child' />
+            <img src='../../cat.png' className='child' />
           </div>
           <h2>中島 啓太（Keita Nakajima）</h2>
         </div>
