@@ -12,11 +12,6 @@ export const aboutsData = [
         icon: ""
     },
     {
-        title: "学校",
-        text: "東京工業大学 情報理工学院 情報工学系",
-        icon: ""
-    },
-    {
         title: "趣味",
         text: "競技プログラミング, 猫, ゲーム, スポーツ観戦",
         icon: ""
@@ -28,7 +23,12 @@ export const aboutsData = [
     },
     {
         title: "興味",
-        text: "分散アルゴリズム, Web開発, Kaggle, CTF",
+        text: "アルゴリズムとデータ構造, Web開発, ブロックチェーン, CTF",
+        icon: ""
+    },
+    {
+        title: "研究テーマ",
+        text: "自律分散ロボット群, Conflict-free Replicated Data Types",
         icon: ""
     },
 ] satisfies Array<abouts>;

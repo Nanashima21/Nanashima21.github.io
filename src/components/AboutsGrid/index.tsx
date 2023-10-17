@@ -15,14 +15,15 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Abouts = () => {
   return (
-    <Box sx={{ pl: '10%', pr: '10%'}}>
+    <Box sx={{ pl: '5%', pr: '5%'}}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {aboutsData.map((about,index) => {
           return (
           <Grid item xs={2} sm={4} md={4} key={index}>
             <Item>
-              <h1>{about.title}</h1>
-              <h2>{about.text}</h2></Item>
+              <h2>{about.title}</h2>
+              <h4>{about.text}</h4>
+            </Item>
           </Grid>
           );
         })}

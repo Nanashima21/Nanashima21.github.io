@@ -5,7 +5,7 @@ export const worksData = [
         title: "ポートフォリオサイト",
         text: "このWebサイトです。これまでやってきたことを整理したかったことと、就活で少しでも見せれるものがあればと思い制作しました。",
         stacks: ["TypeScript", "React"],
-        image: ""
+        image: "portfolio.png"
     },
     {
         title: "MAC2023 Website",

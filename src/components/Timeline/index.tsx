@@ -29,7 +29,7 @@ const TimeLine: FC<Props> = (props) => {
           return (
             <TimelineItem>
               <TimelineOppositeContent color="textSecondary" sx={{ py: '55px', px: 2 }}>
-                <h3>{data.timestamp}</h3>
+                <h4>{data.timestamp}</h4>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
@@ -39,7 +39,7 @@ const TimeLine: FC<Props> = (props) => {
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <div className="container">
                   <img width="120px" height="120px" src={data.image} />
-                  <div><h2>{data.title}</h2>{data.text}</div>
+                  <div><h3>{data.title}</h3>{data.text}</div>
                 </div>
               </TimelineContent>
             </TimelineItem>

@@ -12,17 +12,27 @@
 }
 
 .parent {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     overflow: hidden;
 }
 
 .child {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     overflow: hidden;
+}
+
+.icon {
+    margin: 20px;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .contents {
