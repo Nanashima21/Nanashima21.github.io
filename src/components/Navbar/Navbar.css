@@ -1,14 +1,12 @@
 .nav {
     /* 背景色設定 */
     background-color: #666;
-}
-
-.nav ul {
-    width: 100%;
+    justify-content: space-between;
     display: flex;
-    list-style: none;
-    margin: 0 auto;
-    height: 40px;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .nav a {
@@ -21,22 +19,13 @@
 }
 
 .nav a:hover {
-    /* color: #aaa; */
+    color: #aaa;
 }
 
 /*スマホ対応*/
 @media screen and (max-width: 640px) {
     .nav {
         background-color: #0183a0;
-        height: 150px;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .nav li {
-        border-bottom: solid 1px #fff;
+        height: 40px;
     }
 }
