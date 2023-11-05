@@ -3,7 +3,7 @@ import type { timeline } from "../types"
 export const historiesData = [
     {
         title: "AtCoder ヒューリスティックレートが青色（1600）に到達",
-        text: "トヨタ自動車プログラミングコンテスト2023#6（AtCoder Heuristic Contest 026）でパフォーマンス1916を出し、入水しました!",
+        text: "トヨタ自動車プログラミングコンテスト2023#6（AtCoder Heuristic Contest 026）でパフォーマンス1916を出し、入青しました!",
         timestamp: "2023年11月",
         image: "atcoder.png"
     },
