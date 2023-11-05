@@ -2,6 +2,12 @@ import type { timeline } from "../types"
 
 export const historiesData = [
     {
+        title: "AtCoder ヒューリスティックレートが青色（1600）に到達",
+        text: "トヨタ自動車プログラミングコンテスト2023#6（AtCoder Heuristic Contest 026）でパフォーマンス1916を出し、入水しました!",
+        timestamp: "2023年11月",
+        image: "atcoder.png"
+    },
+    {
         title: "株式会社Speee エンジニア職 秋インターンシップ（2Days）",
         text: "DX領域の仮想のサービス立ち上げを題材に、新規事業立ち上げのSprint0にチームで取り組みました。不確実性の高い中で意思決定することの難しさを実感しましたが、実務レベルでビジネス側の視点から設計を考えたことはとても新鮮で貴重な体験になりました。",
         timestamp: "2023年10月",
@@ -36,12 +42,6 @@ export const historiesData = [
         text: "学部4年時に低学年に対しての進路相談や個別指導を行っていました。主にC言語, 線形代数, 微分積分等を教えていました。",
         timestamp: "2022年4月 〜 2023年2月",
         image: "hosei.jpeg"
-    },
-    {
-        title: "AtCoder ヒューリスティックレートが水色（1200）に到達",
-        text: "MC Digital プログラミングコンテスト2022（AtCoder Heuristic Contest 008）でパフォーマンス1706を出し、入水しました!",
-        timestamp: "2022年2月",
-        image: "atcoder.png"
     },
     {
         title: "JDLA Deep Learning for GENERAL 2020 #2に合格",
