@@ -1,9 +1,11 @@
 .box {
-    font-weight: bold;
-    padding-left: 30px;
-    display: flex;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  padding-left: 30px;
+  display: flex;
 }
 
-.box div{
-    width:40%;
+.box div {
+  width: 40%;
 }
