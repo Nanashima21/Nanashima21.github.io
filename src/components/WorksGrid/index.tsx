@@ -9,6 +9,7 @@ import { ImGithub } from "react-icons/im";
 import { HiMiniLink } from "react-icons/hi2";
 import { CgWebsite } from "react-icons/cg";
 import { TbAppWindow } from "react-icons/tb";
+import { RiMovieLine } from "react-icons/ri";
 import "./WorksGrid.css";
 
 const Works = () => {
@@ -77,6 +78,12 @@ const linkIcon = (link: Array<String>) => {
       return (
         <a className="icon" href={String(link[1])}>
           <CgWebsite size="30px" />
+        </a>
+      );
+    case "movie":
+      return (
+        <a className="icon" href={String(link[1])}>
+          <RiMovieLine size="30px" />
         </a>
       );
     default:

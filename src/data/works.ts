@@ -36,6 +36,10 @@ export const worksData = [
         "drive",
         "https://drive.google.com/file/d/1naOjITf8wvWnVR05l1dl8GLNe5qE1VEM/view?usp=sharing",
       ],
+      [
+        "movie",
+        "https://drive.google.com/file/d/1E6ptOycXYmzQ74rnu5i615wzf3NOgOAI/view?usp=sharing",
+      ],
     ],
     image: "tonkatsu.png",
   },
