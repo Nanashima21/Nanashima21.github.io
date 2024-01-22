@@ -2,6 +2,20 @@ import type { works } from "../types";
 
 export const worksData = [
   {
+    title: "ToGather",
+    text: "ハッカソンで制作した作品です。複数の出発駅からおすすめの駅と周辺のお店を提案します。大人数で集まるときの場所決めで活用できます！",
+    stacks: ["TypeScript", "React", "Go", "Echo", "PostgreSQL"],
+    links: [
+      ["github", "ToGather"],
+      [
+        "drive",
+        "https://www.canva.com/design/DAF6evopcIo/UdRYYtwNRO8SzdgSl_snfg/view",
+      ],
+      ["website", "https://geek-hackathon-psi.vercel.app/"],
+    ],
+    image: "togather.png",
+  },
+  {
     title: "ポートフォリオサイト",
     text: "このWebサイトです。これまでやってきたことを整理したかったことと、就活で少しでも見せれるものがあればと思い制作しました。",
     stacks: ["TypeScript", "React"],
@@ -30,7 +44,7 @@ export const worksData = [
   {
     title: "Tonkatsu",
     text: "大学院のチーム開発の講義で制作したアイスブレイクアプリです。好きなお題に対してChatGPTがヒントを与えるという形で元のお題を当てるというクイズゲームになっています。",
-    stacks: ["TypeScript", "React", "Go", "MySQL"],
+    stacks: ["TypeScript", "React", "Go", "Gin", "MySQL"],
     links: [
       [
         "drive",

@@ -2,6 +2,12 @@ import type { timeline } from "../types";
 
 export const historiesData = [
   {
+    title: "技育CAMP マンスリーハッカソン vol.13（2Days）",
+    text: "友人と2人で参加しました。ハッカソンという短い期間内での開発でしたが、なんとか形にできました。新しい技術に触れる良いきっかけにもなりました。",
+    timestamp: "2024年1月",
+    image: "geekcamp.png",
+  },
+  {
     title: "MIXI Bug Shooting Challenge #10（1Day）",
     text: "ユーザーからの問い合わせに対して、ログやソースコードからシステムの不具合を見つけ出し修正まで行うワークショップに参加しました。サーバーサイドの不具合調査でBigQueryなど経験したことのない技術に触れることができました。",
     timestamp: "2023年12月",
