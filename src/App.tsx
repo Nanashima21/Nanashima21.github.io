@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Abouts from "./components/AboutsGrid";
 import Navbar from "./components/Navbar";
@@ -12,8 +12,21 @@ import { FaSchool, FaLinkedin, FaHistory, FaAward } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdWorkOutline, MdMailOutline } from "react-icons/md";
+import { KeyboardArrowDown, KeyboardArrowRight } from "@mui/icons-material";
 
 const App = () => {
+  const [showAbouts, setShowAbouts] = useState(false);
+  const [showEducations, setShowEducations] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
+  const [showWorks, setShowWorks] = useState(false);
+  const [showAwards, setShowAwards] = useState(false);
+
+  const toggleAbouts = () => setShowAbouts(!showAbouts);
+  const toggleEducations = () => setShowEducations(!showEducations);
+  const toggleHistory = () => setShowHistory(!showHistory);
+  const toggleWorks = () => setShowWorks(!showWorks);
+  const toggleAwards = () => setShowAwards(!showAwards);
+
   return (
     <div className="App">
       <Navbar />
@@ -50,60 +63,81 @@ const App = () => {
       </div>
       <div className="odd">
         <div className="title">
+          <button className="toggleButton" onClick={toggleAbouts}>
+            {showAbouts ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
+          </button>
           <a className="icon">
             <BsPersonVcard size="40px" />
           </a>
           <h1>Abouts</h1>
         </div>
-        <Abouts />
+        {showAbouts && <Abouts />}
       </div>
       <div className="even">
         <div className="title">
+          <button className="toggleButton" onClick={toggleEducations}>
+            {showEducations ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
+          </button>
           <a className="icon">
             <FaSchool size="40px" />
           </a>
           <h1>Educations</h1>
         </div>
-        <TimeLine datas={educationsData} />
+        {showEducations && <TimeLine datas={educationsData} />}
       </div>
       <div className="odd">
         <div className="title">
+          <button className="toggleButton" onClick={toggleHistory}>
+            {showHistory ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
+          </button>
           <a className="icon">
             <FaHistory size="40px" />
           </a>
           <h1>Experience / History</h1>
         </div>
-        <TimeLine datas={historiesData} />
+        {showHistory && <TimeLine datas={historiesData} />}
       </div>
       <div className="even">
         <div className="title">
+          <button className="toggleButton" onClick={toggleWorks}>
+            {showWorks ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
+          </button>
           <a className="icon">
             <MdWorkOutline size="40px" />
           </a>
           <h1>Works</h1>
         </div>
-        <Works />
+        {showWorks && <Works />}
       </div>
       <div className="odd">
         <div className="title">
+          <button className="toggleButton" onClick={toggleAwards}>
+            {showAwards ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
+          </button>
           <a className="icon">
             <FaAward size="40px" />
           </a>
           <h1>Awards</h1>
         </div>
-        <h4>
-          <ul className="contents_ul">
-            <li className="contents_li">
-              ・2023年9月 情報科学ワークショップ
-              優秀プレゼンテーション賞「Efficient Simulations of
-              Energy-Restricted Mobile Robots」
-            </li>
-            <li className="contents_li">
-              ・2023年3月 法政大学理工学部 卒業論文審査会
-              最優秀研究賞「誤認ライトモデルにおける2台の自律分散ロボットに対するランデブーアルゴリズムについて」
-            </li>
-          </ul>
-        </h4>
+        {showAwards && (
+          <h4>
+            <ul className="contents_ul">
+              <li className="contents_li">
+                ・2024年1月 技育CAMP マンスリーハッカソン vol.13
+                ウイングアーク1st株式会社賞 作品名「ToGather」
+              </li>
+              <li className="contents_li">
+                ・2023年9月 情報科学ワークショップ
+                優秀プレゼンテーション賞「Efficient Simulations of
+                Energy-Restricted Mobile Robots」
+              </li>
+              <li className="contents_li">
+                ・2023年3月 法政大学理工学部 卒業論文審査会
+                最優秀研究賞「誤認ライトモデルにおける2台の自律分散ロボットに対するランデブーアルゴリズムについて」
+              </li>
+            </ul>
+          </h4>
+        )}
       </div>
 
       <div className="even">

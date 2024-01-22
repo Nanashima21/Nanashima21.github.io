@@ -1,54 +1,62 @@
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .odd {
-    padding: 20px;
-    background-color: whitesmoke;
+  padding: 20px;
+  background-color: whitesmoke;
 }
 
 .even {
-    padding: 20px;
+  padding: 20px;
 }
 
 .parent {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .child {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .icon {
-    margin: 20px;
+  margin: 20px;
 }
 
 .title {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.toggleButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
 }
 
 .contents {
-    margin-top: 40px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 50px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 50px;
 }
 
 .contents_ul {
-	padding-left: 0;
-	list-style: none;
-	display: inline-block;
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
 }
 
 .contents_li {
-	text-align: left;
+  text-align: left;
 }
