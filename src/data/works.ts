@@ -11,7 +11,7 @@ export const worksData = [
         "drive",
         "https://www.canva.com/design/DAF6evopcIo/UdRYYtwNRO8SzdgSl_snfg/view",
       ],
-      ["website", "https://geek-hackathon-psi.vercel.app/"],
+      ["website", "https://togather-b.vercel.app/"],
     ],
     image: "togather.png",
   },
