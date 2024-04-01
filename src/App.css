@@ -60,3 +60,52 @@
 .contents_li {
   text-align: left;
 }
+
+.contents {
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .parent,
+  .child {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contents {
+    gap: 30px;
+  }
+
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .icon {
+    margin: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .contents {
+    flex-direction: column;
+  }
+
+  .parent,
+  .child {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .contents_li {
+    text-align: left;
+    font-size: 10px;
+  }
+}

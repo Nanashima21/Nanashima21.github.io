@@ -2,10 +2,34 @@
   font-weight: bold;
   font-size: small;
   text-align: center;
+  justify-content: center;
   padding-left: 30px;
   display: flex;
 }
 
-.box div {
-  width: 40%;
+/* tablet */
+@media (max-width: 768px) {
+  .box {
+    padding-left: 0;
+  }
+
+  .icon {
+    margin: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .box {
+    padding-left: 0;
+  }
+
+  .icon {
+    margin: 10px;
+  }
+
+  .box div,
+  .box p {
+    width: 100%;
+  }
 }

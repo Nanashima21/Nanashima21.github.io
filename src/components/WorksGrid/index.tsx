@@ -22,25 +22,38 @@ const Works = () => {
       >
         {worksData.map((about, index) => {
           return (
-            <Grid item xs={2} sm={4} md={4} key={index}>
-              <Card sx={{ minHeight: 400, border: 1 }}>
+            <Grid item xs={12} sm={4} md={4} key={index}>
+              <Card
+                sx={{
+                  minHeight: 300,
+                  border: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
                 <CardMedia sx={{ height: 150 }} image={about.image} />
-                <CardContent>
+                <CardContent sx={{ flexGrow: 1 }}>
+                  {" "}
                   <Typography gutterBottom variant="h6" component="div">
                     <h5 style={{ margin: "5px" }}>{about.title}</h5>
                   </Typography>
                   <div className="box">
                     {about.stacks.map((stack, idx) => {
-                      return idx === 0 ? <p>{stack}</p> : <p>, {stack}</p>;
+                      return idx === 0 ? (
+                        <p key={idx}>{stack}</p>
+                      ) : (
+                        <p key={idx}>, {stack}</p>
+                      );
                     })}
                   </div>
                   <Typography variant="body2" color="text.secondary">
                     {about.text}
                   </Typography>
                 </CardContent>
-                <div className="box">
-                  {about.links.map((link, _) => {
-                    return <>{linkIcon(link)}</>;
+                <div className="box" style={{ padding: "16px" }}>
+                  {about.links.map((link, index) => {
+                    return <div key={index}>{linkIcon(link)}</div>;
                   })}
                 </div>
               </Card>
@@ -54,7 +67,7 @@ const Works = () => {
 
 export default Works;
 
-const linkIcon = (link: Array<String>) => {
+const linkIcon = (link: Array<string>) => {
   switch (link[0]) {
     case "github":
       return (
@@ -64,29 +77,29 @@ const linkIcon = (link: Array<String>) => {
       );
     case "drive":
       return (
-        <a className="icon" href={String(link[1])}>
+        <a className="icon" href={link[1]}>
           <HiMiniLink size="30px" />
         </a>
       );
     case "app":
       return (
-        <a className="icon" href={"https://nanashima21.github.io/" + link[1]}>
+        <a className="icon" href={link[1]}>
           <TbAppWindow size="30px" />
         </a>
       );
     case "website":
       return (
-        <a className="icon" href={String(link[1])}>
+        <a className="icon" href={link[1]}>
           <CgWebsite size="30px" />
         </a>
       );
     case "movie":
       return (
-        <a className="icon" href={String(link[1])}>
+        <a className="icon" href={link[1]}>
           <RiMovieLine size="30px" />
         </a>
       );
     default:
-      return <></>;
+      return null;
   }
 };

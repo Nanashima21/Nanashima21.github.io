@@ -1,5 +1,23 @@
-.container{
-    display: flex;
-    padding: 15px;
-    gap: 20px;
+.container {
+  display: flex;
+  padding: 10px 0px 10px 10px;
+  gap: 20px;
+  align-items: center;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    font-size: small;
+  }
+
+  .container img {
+    margin: 0 auto;
+  }
+
+  .timestamp {
+    font-size: x-small;
+  }
 }

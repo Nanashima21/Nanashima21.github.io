@@ -4,7 +4,7 @@ export const worksData = [
   {
     title: "ToGather",
     text: "ハッカソンで制作した作品です。複数の出発駅からおすすめの駅と周辺のお店を提案します。大人数で集まるときの場所決めで活用できます！",
-    stacks: ["TypeScript", "React", "Go", "Echo", "PostgreSQL"],
+    stacks: ["TypeScript, React, Go, Echo, PostgreSQL"],
     links: [
       ["github", "ToGather"],
       [
@@ -18,21 +18,21 @@ export const worksData = [
   {
     title: "ポートフォリオサイト",
     text: "このWebサイトです。これまでやってきたことを整理したかったことと、就活で少しでも見せれるものがあればと思い制作しました。",
-    stacks: ["TypeScript", "React"],
+    stacks: ["TypeScript, React"],
     links: [["github", "Nanashima21.github.io"]],
     image: "portfolio.png",
   },
   {
     title: "MAC2023 Website",
     text: "2023年に東京工業大学で開催される国際会議のサブイベントとして開催されるイベントサイトの制作をしました。",
-    stacks: ["HTML", "CSS"],
+    stacks: ["HTML, CSS"],
     links: [["website", "https://xdefago.github.io/mac23/"]],
     image: "mac.png",
   },
   {
     title: "認知症予防のためのトレーニングアプリ",
     text: "株式会社エクサウィザーズのインターンシップで制作したAndroidアプリです。認証症患者の増加という社会問題に対して技術を用いて貢献したく、このアプリの開発を行いました。",
-    stacks: ["kotlin", "Jetpack Compose", "Ktor", "MongoDB"],
+    stacks: ["kotlin, Jetpack Compose, Ktor, MongoDB"],
     links: [
       [
         "drive",
@@ -44,7 +44,7 @@ export const worksData = [
   {
     title: "Tonkatsu",
     text: "大学院のチーム開発の講義で制作したアイスブレイクアプリです。好きなお題に対してChatGPTがヒントを与えるという形で元のお題を当てるというクイズゲームになっています。",
-    stacks: ["TypeScript", "React", "Go", "Gin", "MySQL"],
+    stacks: ["TypeScript, React, Go, Gin, MySQL"],
     links: [
       [
         "drive",
@@ -67,7 +67,7 @@ export const worksData = [
   {
     title: "経路探索ヴィジュアライザ",
     text: "研究室紹介と学内でアルゴリズムの面白さをより多くの人に知ってもらうために制作しました。自身にとっての初めての開発でした。",
-    stacks: ["JavaScript", "React"],
+    stacks: ["JavaScript, React"],
     links: [
       ["github", "PathfindingVisualizer"],
       ["app", "PathfindingVisualizer/"],
@@ -77,7 +77,7 @@ export const worksData = [
   {
     title: "ソーティングヴィジュアライザ",
     text: "こちらも経路探索ヴィジュアライザと同じ目的で制作しました。2つのソートを同時実行するという機能をつけることで比較がしやすくなりました。",
-    stacks: ["JavaScript", "React"],
+    stacks: ["JavaScript, React"],
     links: [
       ["github", "SortingVisualizer"],
       ["app", "SortingVisualizer/"],
@@ -87,7 +87,7 @@ export const worksData = [
   {
     title: "卒業研究",
     text: "大学では自律分散ロボットにおける特定の問題を解決するアルゴリズムの研究をしていました。",
-    stacks: ["Python", "Promela"],
+    stacks: ["Python, Promela"],
     links: [],
     image: "bachelor_thesis.png",
   },
